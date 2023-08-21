@@ -2,33 +2,38 @@ Scansionare un documento su più fogli fronte-retro La pratica perduta Finalment
 
 Contesto: Mi trovo in ufficio e ho appena trovato la pratica che cercavo.
 
-Mi dirigo verso lo scanner
-FINTANTO CHE ci sono pagine da scannerizzare
+Mi dirigo verso lo scanner FINTANTO CHE ci sono pagine da scannerizzare
 
-- Apro il vassoio per inserire il documento
-- Inserisco il documento all'interno del vassoio
-- Chiudo il vassoio
-- Avvio il processo di scannerizzazione
+Apro il vassoio per inserire il documento
 
+Inserisco il documento all'interno del vassoio
 
-    - ? SE la scannerizzazione è stata completata AND - il file sia stato scannerizzato correttamente
-        - Apro il vassoio
-        - Capovolgo il documento
-        - Chiudo il vassoio
-        - Avvio nuovamente la scannerizzazione
+Chiudo il vassoio
 
-    - : ALTRIMENTI SE
-        -  le impostazioni dello scanner sono corrette AND il foglio è posizionato nella maniera corretta AND il vassoio è chiuso correttamente
-        - Rieseguo la scansione
-            : ALTRIMENTI 
-            - Chiedo il supporto di un tecnico
-            
-- Mi dirigo verso la libreria
-- Archivio la pratica
-- Torno alla mia postazione
-- ? SE la scansione ha generato più file
-    - Accorpo i documenti in un singolo file
+Avvio il processo di scannerizzazione
 
-- Carico la pratica in formato digitale sul server aziendale
+? SE la scannerizzazione è stata completata AND - il file sia stato scannerizzato correttamente
+
+Apro il vassoio
+Capovolgo il documento
+Chiudo il vassoio
+Avvio nuovamente la scannerizzazione
+: ALTRIMENTI
+
+? SE le impostazioni dello scanner sono corrette AND il foglio è posizionato nella maniera corretta AND il vassoio è chiuso correttamente - Rieseguo la scansione : ALTRIMENTI
+
+Chiedo il supporto di un tecnico
+Termino di scannerizzare l'intera pratica
+
+Mi dirigo verso la libreria
+s
+Archivio la pratica
+
+Torno alla mia postazione
+
+? SE la scansione ha generato più file
+
+Accorpo i documenti in un singolo file
+Carico la pratica in formato digitale sul server aziendale
 
 (finish)
